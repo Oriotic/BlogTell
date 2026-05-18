@@ -21,6 +21,7 @@ Share thoughts, opinions and news — all stored locally, no third-party trackin
 </p>
 
 ## Setup (Using Terminal)
+- download and install (free, one-time setup) - [Node.js](https://nodejs.org) and [PostgreSQL](https://www.postgresql.org)
 
 ### Create the database
 > createdb blogtell
