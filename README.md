@@ -20,7 +20,7 @@ Share thoughts, opinions and news — all stored locally, no third-party trackin
   <img src="preview.jpg" alt="Screenshot" width="700"/>
 </p>
 
-## Setup
+## Setup (Using Terminal)
 
 ### Create the database
 > createdb blogtell
@@ -28,13 +28,15 @@ Share thoughts, opinions and news — all stored locally, no third-party trackin
 ### Run the schema
 > psql -d blogtell -f schema.sql
 
-### In terminal
-> cd backend
 ### Install dependencies
+> cd backend
 > npm i
+
 ### Configure environment
 > cp .env.example .env
+
 ### Edit .env with your PostgreSQL credentials and a strong JWT_SECRET
+
 ### Start development server (with hot reload)
 >npm run dev
 
