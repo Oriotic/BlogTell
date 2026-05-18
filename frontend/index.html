@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlogTell</title>
+  <meta name="description" content="A private space for thoughts, news and opinions." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400;1,600&family=Lora:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header id="site-header" class="site-header hidden">
+    <div class="header-inner">
+      <a href="#/" class="logo" onclick="navigate('/')">
+        <span class="logo-icon">✦</span>
+        <span class="logo-text">BlogTell</span>
+      </a>
+
+      <nav class="main-nav">
+        <a href="#/" class="nav-link" data-route="/">Feed</a>
+        <button class="nav-btn btn-primary" id="btn-new-post" onclick="navigate('/new')">
+          + New Post
+        </button>
+      </nav>
+
+      <div class="header-user" id="header-user">
+        <div class="avatar-menu">
+          <button class="avatar-btn" id="avatar-btn" aria-label="User menu">
+            <span id="avatar-initials">?</span>
+          </button>
+          <div class="avatar-dropdown" id="avatar-dropdown">
+            <div class="dropdown-user-info">
+              <span id="dropdown-display-name">—</span>
+              <span id="dropdown-username" class="muted">—</span>
+            </div>
+            <hr class="dropdown-divider" />
+            <button class="dropdown-item" onclick="navigate('/profile')">Profile</button>
+            <button class="dropdown-item danger" onclick="logout()">Sign out</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="app"></main>
+
+  <div id="toast-container"></div>
+
+  <div id="confirm-overlay" class="hidden">
+    <div class="confirm-box">
+      <p id="confirm-message"></p>
+      <div class="confirm-actions">
+        <button class="btn-secondary" id="confirm-cancel">Cancel</button>
+        <button class="btn-danger"    id="confirm-ok">Delete</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
