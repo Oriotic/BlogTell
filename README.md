@@ -17,7 +17,7 @@ Share thoughts, opinions and news — all stored locally, no third-party trackin
 
 ## Preview
 <p align="center">
-  <img src="preview.jpg" alt="Screenshot" width="700"/>
+  <img src="preview.jpg" alt="Screenshot"/>
 </p>
 
 ## Setup (Using Terminal)
