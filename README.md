@@ -30,6 +30,7 @@ Share thoughts, opinions and news — all stored locally, no third-party trackin
 
 ### Install dependencies
 > cd backend
+> 
 > npm i
 
 ### Configure environment
