@@ -22,22 +22,22 @@ Share thoughts, opinions and news — all stored locally, no third-party trackin
 
 ## Setup
 
-# 1 — Database
 ### Create the database
-createdb blogtell
+> createdb blogtell
 
 ### Run the schema
-psql -d blogtell -f schema.sql
+> psql -d blogtell -f schema.sql
 
-# 2 — Backend
 ### In terminal
-cd backend
+> cd backend
 ### Install dependencies
-npm i
+> npm i
 ### Configure environment
-cp .env.example .env
+> cp .env.example .env
 ### Edit .env with your PostgreSQL credentials and a strong JWT_SECRET
 ### Start development server (with hot reload)
-npm run dev
+>npm run dev
 
+## Privacy & security notes
+- Passwords are hashed with **bcrypt** (12 rounds)
 - All data stays on your machine — no cloud, no telemetry
