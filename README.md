@@ -31,6 +31,7 @@ Share thoughts, opinions and news — all stored locally, no third-party trackin
 
 ### 3.Install dependencies in backend folder
 > cd backend
+
 > npm i
 
 ### 4.Configure environment
