@@ -36,6 +36,7 @@ Share thoughts, opinions and news — all stored locally, no third-party trackin
 
 ### 4.Configure environment
 > cp .env.example .env
+
 Edit .env with your PostgreSQL credentials and a strong JWT_SECRET
 
 ### 5.Start development server (with hot reload)
