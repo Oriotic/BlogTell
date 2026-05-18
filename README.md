@@ -23,23 +23,21 @@ Share thoughts, opinions and news — all stored locally, no third-party trackin
 ## Setup (Using Terminal)
 - download and install (free, one-time setup) - [Node.js](https://nodejs.org) and [PostgreSQL](https://www.postgresql.org)
 
-### Create the database
+### 1.Create the database
 > createdb blogtell
 
-### Run the schema
+### 2.Run the schema
 > psql -d blogtell -f schema.sql
 
-### Install dependencies
+### 3.Install dependencies in backend folder
 > cd backend
-> 
 > npm i
 
-### Configure environment
+### 4.Configure environment
 > cp .env.example .env
+Edit .env with your PostgreSQL credentials and a strong JWT_SECRET
 
-### Edit .env with your PostgreSQL credentials and a strong JWT_SECRET
-
-### Start development server (with hot reload)
+### 5.Start development server (with hot reload)
 >npm run dev
 
 ## Privacy & security notes
